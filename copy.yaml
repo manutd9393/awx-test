@@ -1,9 +1,9 @@
 ---
-- hosts: win
+- hosts: 172.172.136.145
 
   tasks:
   - name: Copy File
     win_copy:
-      src: C:\output.pdf
-      dest: C:\ansible_examples\
+      src: C:\haitham.txt
+      dest: C:\test2\
       remote_src: ye
