@@ -6,4 +6,4 @@
     win_copy:
       src: C:\haitham.txt
       dest: C:\test2\
-      remote_src: ye
+      remote_src: yes
