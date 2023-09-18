@@ -1,14 +1,7 @@
-# Playbook to call multiple roles to configure systems
-- name: Configure systems
-  hosts: 172.174.28.51
-  become: yes
-
-  tasks:
-
-- name: Call Roles
-  hosts: 172.174.28.51
-  roles:
-   #- hostname
-   #- firewalld
-   #- ntp-config
-   - motd
+- name: Create a resource group
+  azure_rm_resourcegroup:
+    name: myResourceGroup
+    location: westus
+    tags:
+        testing: testing
+        delete: never
